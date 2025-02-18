@@ -9,6 +9,9 @@ import InputGroup from "react-bootstrap/InputGroup";
 import FormControl from "react-bootstrap/FormControl"; 
 import ListGroup from "react-bootstrap/ListGroup"; 
 
+
+
+console.log(process.env.REACT_APP_APP_NAME);
 class App extends Component { 
 	constructor(props) { 
 		super(props); 
@@ -87,7 +90,7 @@ class App extends Component {
 						fontWeight: "bolder", 
 					}} 
 				> 
-					TODO LIST 
+					{process.env.REACT_APP_APP_NAME}
 				</Row> 
 
 				<hr /> 
